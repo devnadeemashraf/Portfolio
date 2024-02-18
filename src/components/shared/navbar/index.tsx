@@ -16,7 +16,7 @@ const Navbar = () => {
       </header>
       <header className="navbar">
         <Link href="/">
-          <h4 className="scroll-m-20 text-xl font-semibold tracking-tight text-muted-foreground">
+          <h4 className="scroll-m-20 text-lg font-semibold tracking-tight text-muted-foreground">
             nadeemashraf.dev
           </h4>
         </Link>
@@ -25,9 +25,9 @@ const Navbar = () => {
         <Button
           onClick={() =>
             toast({
-              title: "Work In Progress",
+              title: "Pending Feature Update",
               description:
-                "Thank You for showing interest but this is section of page is still being worked upon.",
+                "Thank You for showing interest but this section of website is still being worked upon. Please do comeback later.",
             })
           }
           variant="link"
