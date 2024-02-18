@@ -11,12 +11,14 @@ const SocialIconsContainer = ({ handles }: SocialIconsContainer) => {
   return (
     <TooltipProvider>
       <ul className="text-muted-foreground">
-        {handles.map((handle, index) => {
+        {handles.map(({ icon, tooltip, target, href }, index) => {
           return (
             <SocialIcon
               key={index}
-              icon={handle.icon}
-              tooltip={handle.tooltip}
+              icon={icon}
+              tooltip={tooltip}
+              target={target}
+              href={href}
             />
           );
         })}
