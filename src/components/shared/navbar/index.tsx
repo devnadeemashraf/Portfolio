@@ -10,29 +10,34 @@ const Navbar = () => {
   const { toast } = useToast();
 
   return (
-    <header className="navbar">
-      <Link href="/">
-        <h4 className="scroll-m-20 text-xl font-semibold tracking-tight text-muted-foreground">
-          nadeemashraf.dev
-        </h4>
-      </Link>
+    <>
+      <header className="sticky w-full text-muted-foreground text-center border-b">
+        <span>Work in Process</span>
+      </header>
+      <header className="navbar">
+        <Link href="/">
+          <h4 className="scroll-m-20 text-xl font-semibold tracking-tight text-muted-foreground">
+            nadeemashraf.dev
+          </h4>
+        </Link>
 
-      {/* Link Items */}
-      <Button
-        onClick={() =>
-          toast({
-            title: "Work In Progress",
-            description:
-              "Thank You for showing interest but this is section of page is still being worked upon.",
-          })
-        }
-        variant="link"
-        size="default"
-      >
-        <Rss size={18} className="mr-2" />
-        <span>Blog</span>
-      </Button>
-    </header>
+        {/* Link Items */}
+        <Button
+          onClick={() =>
+            toast({
+              title: "Work In Progress",
+              description:
+                "Thank You for showing interest but this is section of page is still being worked upon.",
+            })
+          }
+          variant="link"
+          size="default"
+        >
+          <Rss size={18} className="mr-2" />
+          <span>Blog</span>
+        </Button>
+      </header>
+    </>
   );
 };
 
