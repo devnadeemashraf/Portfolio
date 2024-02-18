@@ -42,7 +42,7 @@ const HeroSection = () => {
         </DialogTrigger>
         <DialogContent>
           <DialogHeader>
-            <DialogTitle>You're Sending me an Email</DialogTitle>
+            <DialogTitle>You&apos;re Sending me an Email</DialogTitle>
             <DialogDescription>
               I would try my best to get back to you as soon as possible. Thanks
               a lot!
