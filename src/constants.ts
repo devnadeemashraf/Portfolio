@@ -8,13 +8,13 @@ export const socialHandles: TSocialIcon[] = [
     icon: Github,
     tooltip: "Github",
     target: "_blank",
-    href: "https://github.com/devNadeemAshraf",
+    href: "https://github.com/devnadeemashraf",
   },
   {
     icon: Linkedin,
     tooltip: "LinkedIn",
     target: "_blank",
-    href: "https://www.linkedin.com/in/nadeem-ashraf-112675204/",
+    href: "https://www.linkedin.com/in/nadeemashraf06",
   },
   {
     icon: FileDown,
