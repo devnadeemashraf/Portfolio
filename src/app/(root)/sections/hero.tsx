@@ -26,7 +26,7 @@ const HeroSection = () => {
           Full Stack TypeScript Developer
         </h1>
         <p className="text-xl text-muted-foreground">
-          an aspiring Rustacean and a design enthusiast.
+          and a design enthusiast.
         </p>
       </div>
 

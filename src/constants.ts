@@ -29,19 +29,19 @@ export const skillsList: TSkillCard[] = [
     title: "TypeScript",
     srcURL: "/assets/ts.svg",
     content:
-      "One year of hands on experience working with TypeScript. Used it in my personal projects as well as on projects that I have collaborated on with friends or in the Open Source Community",
+      "More than one year of hands on experience working with TypeScript. Used it in my personal projects as well as on projects that I have collaborated with friends.",
   },
   {
     title: "JavaScript",
     srcURL: "/assets/js.svg",
     content:
-      "Two years of hands on experience working with JavaScript. Mainly used at work where the Job was to write Automated Bots which were eventually APIs interacting with the Company's backend.",
+      "Roughly 3 years of hands on experience working with JavaScript. Mainly used at work where the Job was to write RPAs which were eventually APIs interacting with the Company's backend, DOM Manipulation and Automation.",
   },
   {
     title: "React",
     srcURL: "/assets/react.svg",
     content:
-      "One year of hands on experience working with React. Used it in my personal projects as well as on projects that I have collaborated on with friends or in the Open Source Community",
+      "More than one year of hands on experience working with React. Used it in my personal projects as well as on projects that I have collaborated with friends.",
   },
 ];
 

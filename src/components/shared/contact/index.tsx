@@ -67,9 +67,13 @@ const Contact = () => {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Your Name</FormLabel>
+              <FormLabel>From</FormLabel>
               <FormControl>
-                <Input id="name" placeholder="ex: John Doe" {...field} />
+                <Input
+                  id="name"
+                  placeholder="ex: John Doe or Microsoft"
+                  {...field}
+                />
               </FormControl>
               <ValidationError
                 prefix="Name"
@@ -86,13 +90,13 @@ const Contact = () => {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Message for me</FormLabel>
+              <FormLabel>Message</FormLabel>
               <FormControl>
                 <Textarea
                   id="message"
                   maxLength={250}
                   className="max-h-[120px]"
-                  placeholder={`ex: "You're the most interesting candidate I have ever seen!"`}
+                  placeholder={`ex: I'd love to connect`}
                   {...field}
                 />
               </FormControl>
