@@ -1,13 +1,16 @@
+"use client";
+
 import React from "react";
 
 import { TChildrenProps } from "@/types";
-
-import Navbar from "@/components/shared/navbar";
+import NavigationSidebar from "@/components/shared/navigation/sidebar";
+import NavigationHeader from "@/components/shared/navigation/header";
 
 const RootLayout = ({ children }: TChildrenProps) => {
   return (
-    <main className="wrapper flex flex-col items-center pb-10">
-      <Navbar />
+    <main className="w-full h-screen flex items-center justify-center overflow-hidden">
+      <NavigationSidebar />
+      <NavigationHeader />
       {children}
     </main>
   );

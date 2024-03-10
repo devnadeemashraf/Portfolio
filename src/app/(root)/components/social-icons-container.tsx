@@ -10,7 +10,7 @@ type SocialIconsContainer = {
 const SocialIconsContainer = ({ handles }: SocialIconsContainer) => {
   return (
     <TooltipProvider>
-      <ul className="text-muted-foreground">
+      <ul className="text-muted-foreground space-x-4">
         {handles.map(({ icon, tooltip, target, href }, index) => {
           return (
             <SocialIcon

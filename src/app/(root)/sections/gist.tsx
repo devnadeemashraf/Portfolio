@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { socialHandles } from "@/constants";
+import { socialHandles } from "@/constants/socials";
 
 import {
   Dialog,
@@ -18,23 +18,27 @@ import { Button } from "@/components/ui/button";
 import SocialIconsContainer from "@/app/(root)/components/social-icons-container";
 import Contact from "@/components/shared/contact";
 
-const HeroSection = () => {
+const GistSection = () => {
   return (
-    <section className="flex flex-col items-center justify-center gap-10 mt-10 py-4">
+    <section
+      id="gist"
+      className="w-full h-screen flex-1 flex flex-col items-center justify-center gap-10 p-4"
+    >
       <div className="flex flex-col items-center justify-center gap-4">
-        <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-          Full Stack TypeScript Developer
+        <h1 className="scroll-m-20 text-4xl text-center font-extrabold tracking-tight md:text-5xl lg:text-7xl text-primary/60">
+          TypeScript Developer
         </h1>
-        <p className="text-xl text-muted-foreground">
-          and a design enthusiast.
-        </p>
+        <h1 className="scroll-m-20 max-w-[800px] text-center font-medium tracking-tight text-2xl text-muted-foreground">
+          and a design enthusiast capable of working on the entire stack and
+          delivering exceptional customer facing products!
+        </h1>
       </div>
 
       {/* Social Handles */}
       <SocialIconsContainer handles={socialHandles} />
 
       {/* Get In Touch */}
-      <Dialog>
+      {/* <Dialog>
         <DialogTrigger>
           <Button asChild variant="outline" size="lg">
             <span>Get In Touch</span>
@@ -50,9 +54,9 @@ const HeroSection = () => {
           </DialogHeader>
           <Contact />
         </DialogContent>
-      </Dialog>
+      </Dialog> */}
     </section>
   );
 };
 
-export default HeroSection;
+export default GistSection;

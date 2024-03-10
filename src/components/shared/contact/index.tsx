@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
+  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -50,12 +51,6 @@ const Contact = () => {
     );
   }
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    return values;
-  }
-
   return (
     <Form {...form}>
       <form
@@ -67,13 +62,13 @@ const Contact = () => {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>From</FormLabel>
+              <FormLabel>Sender&apos;s Name</FormLabel>
+              <FormDescription>
+                It&apos;s good to know each other, please use your or your
+                organization&apos;s name.{" "}
+              </FormDescription>
               <FormControl>
-                <Input
-                  id="name"
-                  placeholder="ex: John Doe or Microsoft"
-                  {...field}
-                />
+                <Input id="name" placeholder="ex: John Doe" {...field} />
               </FormControl>
               <ValidationError
                 prefix="Name"
@@ -90,13 +85,17 @@ const Contact = () => {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Message</FormLabel>
+              <FormLabel>Leave a message</FormLabel>
+              <FormDescription>
+                Anything you wanna say. It&apos;s good to keep it short and to
+                the point.
+              </FormDescription>
               <FormControl>
                 <Textarea
                   id="message"
                   maxLength={250}
                   className="max-h-[120px]"
-                  placeholder={`ex: I'd love to connect`}
+                  placeholder={`ex: Hey, there. Would love to connect with you!`}
                   {...field}
                 />
               </FormControl>
@@ -109,7 +108,7 @@ const Contact = () => {
             </FormItem>
           )}
         />
-        <Button disabled={state.submitting} type="submit">
+        <Button disabled={state.submitting} type="submit" className="w-full">
           {state.submitting == true ? "Sending Mail..." : "Send"}
           {state.submitting == true ? (
             <Loader2 size={14} className="animate-spin ml-2" />
@@ -117,17 +116,6 @@ const Contact = () => {
         </Button>
       </form>
     </Form>
-
-    // <form onSubmit={handleSubmit}>
-    //   <label htmlFor="email">Email Address</label>
-    //   <input id="email" type="email" name="email" />
-    //   <ValidationError prefix="Email" field="email" errors={state.errors} />
-    //   <textarea id="message" name="message" />
-    //   <ValidationError prefix="Message" field="message" errors={state.errors} />
-    //   <button type="submit" disabled={state.submitting}>
-    //     Submit
-    //   </button>
-    // </form>
   );
 };
 

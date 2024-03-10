@@ -1,22 +1,19 @@
 // Sections
-import { Spotlight } from "@/components/ui/SpotLight";
-import HeroSection from "./sections/hero";
+import GistSection from "./sections/gist";
+import About from "./sections/about";
 import SkillsSection from "./sections/skills";
 
 export default function Home() {
   return (
-    <>
+    <div className="w-full h-full overflow-auto">
       {/* Hero Section */}
-      <Spotlight
-        className="-top-40 left-0 md:left-60 md:-top-20"
-        fill="white"
-      />
-      <HeroSection />
+      <GistSection />
+
       {/* Skills */}
-      <SkillsSection />
+      {/* <SkillsSection /> */}
       {/* Projects */}
       {/* Personal Development */}
       {/* Footer */}
-    </>
+    </div>
   );
 }
