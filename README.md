@@ -1,6 +1,6 @@
 # Portfolio Website
 
-The design was an inspiration from a Dribble Post (not a replica 👀, just an inspiration). I will mention the link to the post once I found it again, I lost it 💔.
+The design was an inspiration from a Dribble Post (not a replica 👀, just an inspiration). I will mention the link to the post once I find, unfortunately I lost it 💔.
 
 I wanted to keep my Personal Website as simple as possible so I just chose 3 colors, one Foreground, one Background and the last one was my Main Color. I used a lighter shade of the Main color as my Accent Color.
 
