@@ -4,6 +4,13 @@
 
 @layer base {
   :root {
+    --background-offshade: 40, 33%, 96%;
+    --foreground-dark: 0, 0%, 0%;
+
+    --yellow-offshade: 47, 100%, 78%;
+    --blue-offshade: 201, 87%, 85%;
+    --peach: 21, 89%, 71%;
+
     --background: 0 0% 100%;
     --foreground: 224 71.4% 4.1%;
     --card: 0 0% 100%;
@@ -60,14 +67,10 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background_offshade text-foreground_dark;
   }
 }
 
-.aside-visible {
-  @apply block;
-}
-
-.aside-hidden {
-  @apply hidden;
+*::-webkit-scrollbar {
+  display: none;
 }

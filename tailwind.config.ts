@@ -29,6 +29,14 @@ const config = {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
+
+        background_offshade: "hsl(var(--background-offshade))",
+        foreground_dark: "hsl(var(--foreground-dark))",
+
+        yellow_offshade: "hsl(var(--yellow-offshade))",
+        blue_offshade: "hsl(var(--blue-offshade))",
+        peach: "hsl(var(--peach))",
+
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {

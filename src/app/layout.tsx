@@ -1,9 +1,16 @@
 import "./globals.css";
 
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 
-const inter = Inter({ subsets: ["latin"] });
+import type { Metadata } from "next";
+import { Montserrat } from "next/font/google";
+
+const montserrat = Montserrat({
+  weight: ["300", "400", "500", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  fallback: ["Arial", "sans-serif"],
+});
 
 import Providers from "@/components/providers";
 
@@ -23,11 +30,14 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "flex items-center justify-center overflow-hidden",
-          inter.className
+          "w-full h-full flex items-center justify-center",
+          montserrat.className
         )}
       >
-        <Providers>{children}</Providers>
+        <Providers>
+          {children}
+          <Analytics />
+        </Providers>
       </body>
     </html>
   );
