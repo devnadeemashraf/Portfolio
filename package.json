@@ -1,29 +1,40 @@
 {
   "name": "portfolio",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "0.0.1",
+  "description": "Portfolio for Nadeem Ashraf",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "test": "jest",
+    "dev": "clear && npx parcel ./index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devnadeemashraf/Portfolio.git"
+  },
+  "keywords": [
+    "Portfolio",
+    "Nadeem",
+    "Ashraf",
+    "Nadeem",
+    "Portfolio",
+    "Nadeem",
+    "AVRL"
+  ],
+  "author": {
+    "name": "Nadeem Ashraf",
+    "email": "dev.nad.ash@gmail.com"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devnadeemashraf/Portfolio/issues"
+  },
+  "homepage": "https://github.com/devnadeemashraf/Portfolio#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
   },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.24.0"
-  },
-  "devDependencies": {
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "@typescript-eslint/eslint-plugin": "^7.13.1",
-    "@typescript-eslint/parser": "^7.13.1",
-    "@vitejs/plugin-react-swc": "^3.5.0",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-react-refresh": "^0.4.7",
-    "typescript": "^5.2.2",
-    "vite": "^5.3.1"
+    "react-router-dom": "^6.24.1"
   }
 }
