@@ -1,7 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 
+import appreducer from "./slices/app";
+
 const store = configureStore({
-  reducer: {},
+  reducer: {
+    app: appreducer,
+  },
 });
 
 /**
