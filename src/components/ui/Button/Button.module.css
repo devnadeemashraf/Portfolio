@@ -1,0 +1,33 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: var(--spacing-0_5);
+
+  padding: var(--spacing-2) var(--spacing-3);
+
+  border-radius: var(--radius-5);
+
+  transition: 0.25s background ease, 0.25s color ease;
+}
+
+/* Primary */
+.button-primary {
+  background: hsl(var(--clr-elements-background));
+  color: hsl(var(--clr-elements-foreground));
+}
+
+.button-primary:hover {
+  background: hsla(var(--clr-elements-background), 0.85);
+}
+
+/* Secondary */
+.button-secondary {
+  background: transparent;
+  color: hsl(var(--clr-elements-background));
+}
+
+.button-secondary:hover {
+  background: hsl(var(--clr-elements-background), 0.175);
+}

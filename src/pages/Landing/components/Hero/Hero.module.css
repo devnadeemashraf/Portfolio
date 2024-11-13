@@ -1,0 +1,7 @@
+.hero {
+  height: 80svh;
+}
+
+.hero-cta {
+  display: flex;
+}

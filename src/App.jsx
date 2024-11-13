@@ -1,15 +1,20 @@
+import Container from "./components/shared/container";
 import Header from "./components/shared/header";
 import Footer from "./components/shared/footer";
 
+// Pages
+import LandingPage from "./pages/Landing";
+
 const App = () => {
   return (
-    <>
+    <Container type="div">
       <Header />
-      <section>
-        <h1>Hello from App</h1>
-      </section>
+      {/* 
+        @devnadeemasraf - Will Have my Router Here in Future instead of the LandingPage
+        */}
+      <LandingPage />
       <Footer />
-    </>
+    </Container>
   );
 };
 

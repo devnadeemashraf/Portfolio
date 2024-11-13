@@ -1,5 +1,11 @@
+import * as classes from "./Header.module.css";
+
 const Header = () => {
-  return <header>hey im a header</header>;
+  return (
+    <header className={`${classes["header"]}`}>
+      <span className={`${classes["header--brand"]}`}>NA</span>
+    </header>
+  );
 };
 
 export default Header;
