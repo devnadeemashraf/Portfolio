@@ -1,15 +1,30 @@
 .header {
-  width: 100%;
+  position: sticky;
+  top: var(--spacing-base);
+
   height: 60px;
+
+  margin-top: var(--spacing-base);
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  padding-inline: var(--spacing-3);
+  padding-inline: var(--spacing-1);
+
+  background: hsla(var(--clr-foreground), 0.02); /* Semi-transparent white */
+  backdrop-filter: blur(8px); /* Background blur */
+  border-radius: var(--radius-5);
 }
 
 .header--brand {
-  font-size: var(--font-size-xl);
-  user-select: none;
+  font-size: var(--font-size-lg);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  /* Styles for small screens */
+  .header--brand {
+    font-size: var(--font-size-base);
+  }
 }

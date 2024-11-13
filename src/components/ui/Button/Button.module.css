@@ -3,9 +3,9 @@
   align-items: center;
   justify-content: space-between;
 
-  gap: var(--spacing-0_5);
+  gap: 0.35rem;
 
-  padding: var(--spacing-2) var(--spacing-3);
+  padding: var(--spacing-base) var(--spacing-base);
 
   border-radius: var(--radius-5);
 
@@ -14,20 +14,20 @@
 
 /* Primary */
 .button-primary {
-  background: hsl(var(--clr-elements-background));
-  color: hsl(var(--clr-elements-foreground));
+  background: hsl(var(--clr-foreground));
+  color: hsl(var(--clr-background));
 }
 
 .button-primary:hover {
-  background: hsla(var(--clr-elements-background), 0.85);
+  background: hsla(var(--clr-foreground), 0.85);
 }
 
 /* Secondary */
 .button-secondary {
   background: transparent;
-  color: hsl(var(--clr-elements-background));
+  color: hsl(var(--clr-foreground));
 }
 
 .button-secondary:hover {
-  background: hsl(var(--clr-elements-background), 0.175);
+  background: hsl(var(--clr-muted));
 }
