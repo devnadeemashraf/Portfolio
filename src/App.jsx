@@ -2,7 +2,6 @@ import Container from "./components/shared/container";
 import Header from "./components/shared/header";
 import Footer from "./components/shared/footer";
 
-// Pages
 import LandingPage from "./pages/Landing";
 
 const App = () => {

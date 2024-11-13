@@ -9,8 +9,9 @@ const Button = forwardRef((props, ref) => {
     type,
     variant = "primary",
     asChild = false,
-    children,
+    onClick = () => {},
     className = "",
+    children,
   } = props;
 
   if (!BUTTON_VARIANTS.includes(variant)) {
@@ -31,8 +32,9 @@ const Button = forwardRef((props, ref) => {
   return (
     <Component
       ref={ref}
-      className={`${classes["button"]} ${classes[variantCSS]} ${className}`}
       type={type}
+      onClick={onClick}
+      className={`${classes["button"]} ${classes[variantCSS]} ${className}`}
     >
       {children}
     </Component>

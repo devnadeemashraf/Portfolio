@@ -10,7 +10,7 @@
   "scripts": {
     "start:dev": "parcel",
     "build": "rimraf .parcel-cache && rimraf dist && clear && parcel build",
-    "clear:cache": "rimraf .parcel-cache"
+    "clear:cache": "rimraf .parcel-cache && rimraf ./dist"
   },
   "dependencies": {
     "axios": "^1.7.7",

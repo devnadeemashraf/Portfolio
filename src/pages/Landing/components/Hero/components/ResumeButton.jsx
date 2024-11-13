@@ -3,13 +3,13 @@ import { Button, withIconStyles } from "../../imports";
 
 const DownloadIconWithStyles = withIconStyles({ size: 18 }, ArrowDown);
 
-const DownloadResumeButton = () => {
+const ResumeButton = ({ onClick }) => {
   return (
-    <Button>
+    <Button onClick={onClick}>
       <span>Resume</span>
       <DownloadIconWithStyles />
     </Button>
   );
 };
 
-export default DownloadResumeButton;
+export default ResumeButton;

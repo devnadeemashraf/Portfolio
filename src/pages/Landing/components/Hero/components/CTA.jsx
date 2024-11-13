@@ -1,11 +1,18 @@
 import * as classes from "../Hero.module.css";
 
-import DownloadResumeButton from "./DownloadResumeButton";
+import ResumeButton from "./ResumeButton";
+
+import { config, withDownloads } from "../imports";
+
+const ResumeButtonWithDownloads = withDownloads(ResumeButton, {
+  file: config.assets.resumeURL,
+  fileName: "Nadeem_Ashraf__Resume.pdf",
+});
 
 const CTA = () => {
   return (
     <div className={classes["hero-cta"]}>
-      <DownloadResumeButton />
+      <ResumeButtonWithDownloads />
     </div>
   );
 };

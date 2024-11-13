@@ -14,6 +14,10 @@ const config = {
       },
     },
   },
+  assets: {
+    resumeURL:
+      "https://drive.usercontent.google.com/uc?id=1tC7qnPL8dcbjy56IA9w2_AerZWSyF2Nq&export=download",
+  },
 };
 
 export default config;
