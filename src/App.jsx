@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/react";
+
 import Header from "~/src/components/shared/header";
 import Footer from "~/src/components/shared/footer";
 
@@ -12,6 +14,8 @@ const App = () => {
         */}
       <LandingPage />
       <Footer />
+
+      <Analytics />
     </>
   );
 };
