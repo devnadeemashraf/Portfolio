@@ -2,8 +2,8 @@ const APP_ENV = process.env.REACT_APP_ENV;
 
 // Set this to your Leetcode Username
 const LEETCODE_USERNAME = "NadeemAshraf";
-const RESUME_DRIVE_LINK =
-  "https://drive.usercontent.google.com/uc?id=1tC7qnPL8dcbjy56IA9w2_AerZWSyF2Nq&export=download";
+const DRIVE_ITEM_ID = "1OZS78dsSXIcriqPUJWwrQBSvDIOQStOb";
+const RESUME_DRIVE_LINK = `https://drive.usercontent.google.com/uc?id=${DRIVE_ITEM_ID}&export=download`;
 
 const config = {
   apis: {

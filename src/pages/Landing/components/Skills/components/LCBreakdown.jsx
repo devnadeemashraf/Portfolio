@@ -11,9 +11,9 @@ const LCBreakdown = ({ stats }) => {
           Easy
         </span>
         <span>
-          <span>120</span>
+          <span>[WIP]</span>
           <span>/</span>
-          <span>240</span>
+          <span>[WIP]</span>
         </span>
       </div>
       {/* Medium */}
@@ -24,9 +24,9 @@ const LCBreakdown = ({ stats }) => {
           Med.
         </span>
         <span>
-          <span>120</span>
+          <span>[WIP]</span>
           <span>/</span>
-          <span>240</span>
+          <span>[WIP]</span>
         </span>
       </div>
       {/* Hard */}
@@ -35,9 +35,9 @@ const LCBreakdown = ({ stats }) => {
           Hard
         </span>
         <span>
-          <span>120</span>
+          <span>[WIP]</span>
           <span>/</span>
-          <span>240</span>
+          <span>[WIP]</span>
         </span>
       </div>
     </div>

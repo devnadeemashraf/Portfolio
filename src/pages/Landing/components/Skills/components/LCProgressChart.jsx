@@ -150,7 +150,8 @@ const LCProgressChart = ({ stats }) => {
         fontSize={fontSize}
         className="font-medium"
       >
-        {`${totals.totalSolved}/${totals.totalProblems}`}
+        {/* {`${totals.totalSolved}/${totals.totalProblems}`} */}
+        [WIP]
       </text>
 
       <g transform={`rotate(-90 ${center} ${center})`}>
