@@ -9,7 +9,7 @@
   "source": "src/index.html",
   "scripts": {
     "start:dev": "rimraf ./.parcel-cache && rimraf ./dist && parcel src/index.html",
-    "build": "rimraf .parcel-cache && rimraf dist && clear && parcel build",
+    "build": "parcel build",
     "clear:cache": "rimraf .parcel-cache && rimraf ./dist"
   },
   "dependencies": {
