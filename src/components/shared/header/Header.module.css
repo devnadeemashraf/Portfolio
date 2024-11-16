@@ -4,17 +4,17 @@
 
   height: 60px;
 
-  margin-top: var(--spacing-base);
-
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  padding-inline: var(--spacing-1);
+  padding-inline: var(--spacing-2);
 
-  background: hsla(var(--clr-foreground), 0.02); /* Semi-transparent white */
-  backdrop-filter: blur(8px); /* Background blur */
+  background: var(--bg-semi-transparent);
+  backdrop-filter: var(--blur-lg);
   border-radius: var(--radius-5);
+
+  z-index: var(--z-idx-3);
 }
 
 .header--brand {

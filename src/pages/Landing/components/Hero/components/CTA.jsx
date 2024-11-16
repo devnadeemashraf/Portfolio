@@ -6,8 +6,8 @@ import withDownloads from "~/src/hoc/withDownloads";
 import ResumeButton from "./ResumeButton";
 
 const ResumeButtonWithDownloads = withDownloads(ResumeButton, {
-  file: config.assets.resumeURL,
-  fileName: "Nadeem_Ashraf__Resume.pdf",
+  link: config.assets.resumeURL,
+  downloadedFileName: "Nadeem_Ashraf__Resume.pdf",
 });
 
 const CTA = () => {

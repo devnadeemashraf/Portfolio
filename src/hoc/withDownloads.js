@@ -1,18 +1,20 @@
 const withDownloads = (Component, hocProps) => {
-  const { file = "", fileName = "" } = hocProps;
+  const { link = null, downloadedFileName = null } = hocProps;
 
   const handleDownload = (e, ...rest) => {
-    if (file !== "") {
-      // Prevent default action if downloading
+    if (link !== null) {
       e.preventDefault();
 
-      // Create a temporary link element to trigger download
-      const link = document.createElement("a");
-      link.href = file;
-      link.download = fileName; // Set download filename
-      document.body.appendChild(link);
-      link.click(); // Trigger the download
-      document.body.removeChild(link); // Clean up the DOM
+      const anchor = document.createElement("a");
+      anchor.href = link;
+
+      if (downloadedFileName !== null) {
+        anchor.download = downloadedFileName;
+      }
+
+      document.body.appendChild(anchor);
+      anchor.click();
+      document.body.removeChild(anchor);
     }
 
     // Call the original onClick handler if it exists

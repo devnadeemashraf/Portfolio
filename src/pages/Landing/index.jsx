@@ -13,7 +13,7 @@ const LandingPage = () => {
     <Container className={classes["landing-page"]}>
       <Hero />
       <Skills />
-      <Projects />
+      {/* <Projects /> */}
     </Container>
   );
 };

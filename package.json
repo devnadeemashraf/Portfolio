@@ -8,7 +8,7 @@
   "license": "MIT",
   "source": "src/index.html",
   "scripts": {
-    "start:dev": "parcel",
+    "start:dev": "rimraf ./.parcel-cache && rimraf ./dist && parcel src/index.html",
     "build": "rimraf .parcel-cache && rimraf dist && clear && parcel build",
     "clear:cache": "rimraf .parcel-cache && rimraf ./dist"
   },

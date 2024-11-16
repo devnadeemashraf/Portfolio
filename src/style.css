@@ -5,7 +5,7 @@
   --clr-foreground: 0, 0%, 20%; /* Dark gray for text */
   --clr-background: 0, 0%, 100%; /* White background */
 
-  --clr-accent: 159, 70%, 53%; /* Golden-accent color for highlights */
+  --clr-accent: 159, 70%, 53%; /* NeonGreen-accent color for highlights */
 
   --clr-border: 0, 0%, 90%; /* Light gray borders */
   --clr-muted: 0, 0%, 15%; /* Muted text for secondary elements */
@@ -13,6 +13,10 @@
   --clr-shadow: 0, 0%, 50%; /* Soft shadow color */
   --clr-link: 159, 70%, 53%; /* Accent color for links */
   --clr-hover: 159, 70%, 63%; /* Hover state for links */
+
+  --clr-lc-easy: 180, 74%, 42%; /* Status: Leetcode Easy Difficulty */
+  --clr-lc-medium: 43, 100%, 50%; /* Status: Leetcode Medium Difficulty */
+  --clr-lc-hard: 0, 91%, 59%; /* Status: Leetcode Hard Difficulty */
 
   --spacing-base: 1rem; /* 1rem as the base unit */
   --spacing-1: calc(var(--spacing-base) * 1.618); /* 1.618rem */
@@ -48,6 +52,15 @@
   --shadow-light: 0 2px 5px hsla(var(--clr-shadow), 0.1);
   --shadow-medium: 0 6px 15px hsla(var(--clr-shadow), 0.2);
   --shadow-heavy: 0 15px 30px hsla(var(--clr-shadow), 0.3);
+
+  /* Blur */
+  --blur-sm: blur(2px);
+  --blur-md: blur(4px);
+  --blur-lg: blur(8px);
+
+  /* Default Styles*/
+  --bg-semi-transparent: hsla(var(--clr-foreground), 0.02);
+  --max-width: 1280px;
 }
 
 [data-theme="dark"] {
@@ -72,6 +85,8 @@
 
 /* Prevent font size inflation */
 html {
+  height: 100%;
+
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
@@ -96,6 +111,7 @@ li {
   margin: 0;
   padding: 0;
   line-height: 1.5;
+  list-style-type: none;
 }
 
 ul[role="list"],
@@ -121,13 +137,11 @@ dd {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
-  width: 100%;
   height: 100%;
-  min-height: 100vh;
 
   line-height: 1.6;
   font-family: "Inter", sans-serif;
@@ -137,12 +151,14 @@ body {
   color: hsl(var(--clr-foreground));
 
   transition: background 0.75s ease, color 0.75s ease;
-
-  z-index: var(--z-idx-0);
 }
 
 #root {
-  padding-inline: var(--spacing-base);
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+
+  padding-inline: var(--spacing-1);
 }
 
 /* Set headings with proper line heights */

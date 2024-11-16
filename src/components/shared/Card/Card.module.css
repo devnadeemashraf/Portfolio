@@ -1,0 +1,23 @@
+.card {
+  height: auto;
+  min-height: 240px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+  border: 2px solid hsla(var(--clr-border), 0.1);
+  border-radius: var(--radius-5);
+
+  padding: var(--spacing-base);
+
+  transition: background 0.1s ease, backdrop-filter 0.1s ease;
+
+  cursor: pointer;
+}
+
+.card:hover {
+  background: var(--bg-semi-transparent);
+  backdrop-filter: var(--blur-lg);
+}

@@ -16,7 +16,7 @@ const Container = ({ type = "div", id, className = "", children }) => {
   const Component = type;
 
   return (
-    <Component id={id} className={`${classes.container} ${className}`}>
+    <Component id={id} className={`${className}`}>
       {children}
     </Component>
   );
