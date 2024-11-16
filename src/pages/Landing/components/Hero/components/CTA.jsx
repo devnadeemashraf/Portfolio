@@ -1,8 +1,9 @@
 import * as classes from "../Hero.module.css";
 
-import ResumeButton from "./ResumeButton";
+import config from "~/src/config";
+import withDownloads from "~/src/hoc/withDownloads";
 
-import { config, withDownloads } from "../imports";
+import ResumeButton from "./ResumeButton";
 
 const ResumeButtonWithDownloads = withDownloads(ResumeButton, {
   file: config.assets.resumeURL,

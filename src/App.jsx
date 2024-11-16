@@ -1,8 +1,8 @@
-import Container from "./components/shared/container";
-import Header from "./components/shared/header";
-import Footer from "./components/shared/footer";
+import Container from "~/src/components/shared/container";
+import Header from "~/src/components/shared/header";
+import Footer from "~/src/components/shared/footer";
 
-import LandingPage from "./pages/Landing";
+import LandingPage from "~/src/pages/Landing";
 
 const App = () => {
   return (

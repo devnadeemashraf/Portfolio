@@ -1,4 +1,4 @@
-import { Container } from "../imports";
+import Container from "~/src/components/shared/container";
 
 const Skills = () => {
   return (

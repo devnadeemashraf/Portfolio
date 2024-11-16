@@ -2,7 +2,7 @@ import * as classes from "../Hero.module.css";
 
 import { memo } from "react";
 
-import { getTimeElapsedInYears } from "../../imports";
+import { getTimeElapsedInYears } from "~/src/lib/utils";
 
 import SummaryHighlight from "./SummaryHighlight";
 

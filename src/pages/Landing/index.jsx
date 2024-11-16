@@ -1,7 +1,9 @@
 import * as classes from "./Landing.module.css";
 
-import Container from "../../components/shared/container";
+// Global Components
+import Container from "~/src/components/shared/container";
 
+// Local Components
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";

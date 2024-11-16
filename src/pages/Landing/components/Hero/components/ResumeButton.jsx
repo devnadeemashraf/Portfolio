@@ -1,5 +1,7 @@
 import { ArrowDown } from "lucide-react";
-import { Button, withIconStyles } from "../../imports";
+
+import Button from "~/src/components/ui/Button";
+import withIconStyles from "~/src/hoc/withIconStyles";
 
 const DownloadIconWithStyles = withIconStyles({ size: 18 }, ArrowDown);
 

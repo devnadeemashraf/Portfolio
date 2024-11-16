@@ -1,5 +1,6 @@
-import { memo } from "react";
 import * as classes from "../Hero.module.css";
+
+import { memo } from "react";
 
 const SummaryHighlight = ({ children }) => {
   return (

@@ -1,7 +1,9 @@
 import * as classes from "./Hero.module.css";
 
-import { Container } from "../imports";
+// Global Components
+import Container from "~/src/components/shared/container";
 
+// Local Components
 import Greetings from "./components/Greetings";
 import Summary from "./components/Summary";
 import CTA from "./components/CTA";
