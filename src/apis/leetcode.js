@@ -1,13 +1,15 @@
 import axios from "axios";
 
-import config from "../config";
+import config from "~/src/config";
 
-const BASE_URL = config.apis.leetcode.baseURL;
+const BASE_URL = config["leetcode"]["api"]["baseURL"];
 
-export default axios.create({
+const instance = axios.create({
   baseURL: BASE_URL,
   headers: {
     "Content-Type": "application/json",
     Accept: "application/json",
   },
 });
+
+export default instance;

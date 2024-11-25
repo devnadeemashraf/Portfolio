@@ -1,31 +1,18 @@
-const APP_ENV = process.env.REACT_APP_ENV;
+const APP_ENV = process.env.REACT_ENV;
+const GDRIVE_RESUME_ID = process.env.REACT_GDRIVE_RESUME_ID;
 
 // Set this to your Leetcode Username
 const LEETCODE_USERNAME = "NadeemAshraf";
-const DRIVE_ITEM_ID = "17i6eSvG2pi84eTi2ymY3YT4ICY6MVdoF";
-const RESUME_DRIVE_LINK = `https://drive.usercontent.google.com/uc?id=${DRIVE_ITEM_ID}&export=download`;
+const RESUME_DRIVE_LINK = `https://drive.usercontent.google.com/uc?id=${GDRIVE_RESUME_ID}&export=download`;
 
 const config = {
-  apis: {
-    leetcode: {
-      baseURL:
-        APP_ENV == "development"
-          ? "http://localhost:3000"
-          : "https://alfa-leetcode-api.onrender.com/",
-      routes: {
-        profile: `/${LEETCODE_USERNAME}`,
-        solved: `/${LEETCODE_USERNAME}/solved`,
-        calendar: `/${LEETCODE_USERNAME}/calendar`,
-      },
-    },
-  },
   leetcode: {
     username: LEETCODE_USERNAME,
     api: {
       baseURL:
         APP_ENV == "development"
           ? "http://localhost:3000"
-          : "https://alfa-leetcode-api.onrender.com/",
+          : "https://alfa-leetcode-api.onrender.com",
       routes: {
         profile: `/${LEETCODE_USERNAME}`,
         solved: `/${LEETCODE_USERNAME}/solved`,

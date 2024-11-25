@@ -5,8 +5,8 @@ import { createCacheKey, getCache, setCache } from "../lib/utils";
 const useAxios = (configObj) => {
   const {
     axiosInstance,
-    method,
-    url,
+    method = "GET",
+    url = "/",
     requestConfig = {},
     fetchOnMount = false,
     cacheExpiry = 10 * 60 * 1000, // Cache expiration time (10 minutes by default)
@@ -29,21 +29,23 @@ const useAxios = (configObj) => {
       return; // If we have cached data, skip the API call
     }
 
-    // If no cached data, proceed with the API call
-    try {
-      const res = await axiosInstance[method.toLowerCase()](url, {
-        ...requestConfig,
-        signal: controllerRef.current.signal,
-      });
+    if (axiosInstance) {
+      // If no cached data, proceed with the API call
+      try {
+        const res = await axiosInstance[method.toLowerCase()](url, {
+          ...requestConfig,
+          signal: controllerRef.current.signal,
+        });
 
-      // Set the response data in state and cache it
-      setResponse(res.data);
-      setCache(cacheKey, res.data); // Cache the data with the provided cacheKey
-    } catch (error) {
-      console.log(error);
-      setError(error.message);
-    } finally {
-      setLoading(false);
+        // Set the response data in state and cache it
+        setResponse(res.data);
+        setCache(cacheKey, res.data); // Cache the data with the provided cacheKey
+      } catch (error) {
+        console.log(error);
+        setError(error.message);
+      } finally {
+        setLoading(false);
+      }
     }
   };
 
