@@ -8,7 +8,6 @@ A simple React-based website to showcase your portfolio. Built with React, it is
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Getting Started
@@ -45,16 +44,6 @@ npm run start:dev
 ```
 
 This will start the development server, and you can view the website by navigating to [http://localhost:1234](http://localhost:1234) in your browser.
-
-## Contributing
-
-Contributions are welcome! Please follow these steps to contribute:
-
-1. Fork the repo
-2. Create a new branch (`git checkout -b feature-branch`)
-3. Make your changes and commit (`git commit -am 'Add new feature'`)
-4. Push to your fork (`git push origin feature-branch`)
-5. Open a pull request
 
 ## License
 
