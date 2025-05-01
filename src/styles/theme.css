@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Syne:wght@400..800&display=swap");
+
+:root {
+  --clr-background: #050505;
+  --clr-background-muted: #101010;
+  --clr-foreground: #ededed;
+  --clr-foreground-muted: #191919;
+
+  --clr-brand: #a290fc;
+  --clr-brand-foreground: #212121;
+
+  --clr-border: #191919;
+  --clr-border-muted: #1f1f1f;
+
+  --clr-card-background: #101010;
+  --clr-card-foreground: #ededed;
+  --clr-card-background-muted: #141414;
+  --clr-card-foreground-muted: #999999;
+  --clr-card-border: #191919;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --clr-background: #050505;
+    --clr-background-muted: #101010;
+    --clr-foreground: #ededed;
+    --clr-foreground-muted: #999999;
+
+    --clr-brand: #a290fc;
+    --clr-brand-foreground: #212121;
+
+    --clr-border: #191919;
+    --clr-border-muted: #1f1f1f;
+
+    --clr-card-background: #101010;
+    --clr-card-foreground: #ededed;
+    --clr-card-background-muted: #141414;
+    --clr-card-foreground-muted: #999999;
+    --clr-card-border: #191919;
+
+    /* Tab Component Style */
+    --clr-tab-background: #191919;
+    --clr-tab-background__hover: #1e1e1e;
+
+    --clr-tab-background--active: #a290fc;
+    --clr-tab-background--active__hover: #9b88fb;
+
+    --clr-tab-foreground: #cccccc;
+    --clr-tab-foreground__hover: #cccccc;
+
+    --clr-tab-foreground--active: #212121;
+    --clr-tab-foreground--active__hover: #000;
+
+    --clr-tab-border: #1f1f1f;
+    --clr-tab-border--active: transparent;
+    --clr-tab-border--active__hover: transparent;
+    /* Tab Component Style */
+
+    --clr-btn-background: #191919;
+    --clr-btn-background-muted: #141414;
+    --clr-btn-background-dark: #000000;
+    --clr-btn-background-brand: #a290fc;
+    --clr-btn-foreground: #999999;
+    --clr-btn-foreground-muted: #cccccc;
+    --clr-btn-foreground-bright: #ffffff;
+    --clr-btn-foreground-brand: #a290fc;
+    --clr-btn-border: #1f1f1f;
+  }
+}
+
+@theme inline {
+  /* THEMES */
+  --color-background: var(--clr-background);
+  --color-background-muted: var(--clr-background-muted);
+  --color-foreground: var(--clr-foreground);
+  --color-foreground-muted: var(--clr-foreground-muted);
+
+  --color-brand: var(--clr-brand);
+  --color-brand-foreground: var(--clr-brand-foreground);
+
+  --color-border: var(--clr-border);
+  --color-border-muted: var(--clr-border-muted);
+
+  --color-tab-background: var(--clr-tab-background);
+  --color-tab-background--active: var(--clr-tab-background--active);
+  --color-tab-background--active__hover: var(
+    --clr-tab-background--active__hover
+  );
+  --color-tab-background__hover: var(--clr-tab-background__hover);
+  --color-tab-foreground: var(--clr-tab-foreground);
+  --color-tab-foreground--active: var(--clr-tab-foreground--active);
+  --color-tab-foreground--active__hover: var(
+    --clr-tab-foreground--active__hover
+  );
+  --color-tab-foreground__hover: var(--clr-tab-foreground__hover);
+  --color-tab-border: var(--clr-tab-border);
+  --color-tab-border__active: var(--clr-tab-border__active);
+  --color-tab-border__active: var(--clr-tab-border__active);
+  /* THEMES */
+
+  /* FONTS */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --font-syne: "Syne", sans-serif;
+  --font-manrope: "Manrope", sans-serif;
+  /* FONTS */
+}
