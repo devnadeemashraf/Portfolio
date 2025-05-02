@@ -26,7 +26,7 @@
     --clr-foreground: #ededed;
     --clr-foreground-muted: #999999;
 
-    --clr-brand: #a290fc;
+    --clr-brand: #8fa988;
     --clr-brand-foreground: #212121;
 
     --clr-border: #191919;
@@ -42,8 +42,8 @@
     --clr-tab-background: #191919;
     --clr-tab-background__hover: #1e1e1e;
 
-    --clr-tab-background--active: #a290fc;
-    --clr-tab-background--active__hover: #9b88fb;
+    --clr-tab-background--active: #8fa988;
+    --clr-tab-background--active__hover: #8ba387;
 
     --clr-tab-foreground: #cccccc;
     --clr-tab-foreground__hover: #cccccc;
@@ -59,11 +59,11 @@
     --clr-btn-background: #191919;
     --clr-btn-background-muted: #141414;
     --clr-btn-background-dark: #000000;
-    --clr-btn-background-brand: #a290fc;
+    --clr-btn-background-brand: #8fa988;
     --clr-btn-foreground: #999999;
     --clr-btn-foreground-muted: #cccccc;
     --clr-btn-foreground-bright: #ffffff;
-    --clr-btn-foreground-brand: #a290fc;
+    --clr-btn-foreground-brand: #8fa988;
     --clr-btn-border: #1f1f1f;
   }
 }
